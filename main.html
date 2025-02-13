@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>"4D Texture Distillation via Diffusion Priors" Mid-term Results</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .video-section, .pipeline-section {
+      margin: 20px 0;
+    }
+    h1, h2 {
+      margin: 0 0 10px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .video-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .video-item {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1; 
+      background-color: #000;
+      overflow: hidden;
+    }
+    .video-item video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; 
+      background-color: #000;
+      display: block;
+    }
+    .pipeline img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Project Mid-term Results</h1>
+  </header>
+
+  <div class="container">
+    <section class="video-section">
+      <h2>Mid-term Results</h2>
+      <p>Here are three short clips demonstrating the mid-term progress.</p>
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-item">
+          <video src="video1.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <!-- Video 2 -->
+        <div class="video-item">
+          <video src="video2.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <!-- Video 3 -->
+        <div class="video-item">
+          <video src="video3.mp4" autoplay loop muted playsinline></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- pipeline -->
+    <section class="pipeline-section">
+      <h2>Pipeline</h2>
+      <p>This diagram roughly shows the training progress of our work.</p>
+      <div class="pipeline">
+        <img src="pipeline.png" alt="Pipeline Diagram">
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 4D Texture Distillation via Diffusion Priors. All Rights Reserved.</p>
+    <p>
+      Authors: 
+      <a href="https://github.com/Pangolin112" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: underline;">
+        Qianru Li<sup>*</sup>
+      </a> 
+      and 
+      <a href="https://github.com/PhilipsDeng" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: underline;">
+        Yunfei Deng<sup>*</sup>
+      </a>
+    </p>
+    <p>
+      <sup>*</sup> These authors contributed equally to this work.
+    </p>
+  </footer>
+</body>
+</html>
